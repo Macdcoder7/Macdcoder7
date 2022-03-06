@@ -1,0 +1,115 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --gradient: linear-gradient(
+        45deg,
+        #ff672b,
+        #FF416C,
+        #ff0000
+    );
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: var(--gradient);
+  background-size: 400%;
+  -webkit-animation: bg-animation 30s infinite;
+          animation: bg-animation 30s infinite;
+}
+
+.counter_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+tr {
+  size: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5e62), to(#ff9966));
+  background-image: linear-gradient(#ff5e62, #ff9966);
+  background-position: left;
+  letter-spacing: 40px;
+  color: #f84626;
+}
+
+.container {
+  outline-style: solid;
+  width: 500px;
+  max-width: 1000px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  outline: #FF416C;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.41);
+}
+
+.Counter tr td {
+  font-size: 50px;
+  font-family: fantasy;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  size: 100px;
+  background-image: var(--gradient);
+  border: 0;
+}
+
+#counter {
+  font-size: 100px;
+  font-family: fantasy;
+}
+/*# sourceMappingURL=main.css.map */
